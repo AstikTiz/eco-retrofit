@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<style>
+  html,body{margin:0;padding:0;background:#f5f1e8;}
+  .sheet{width:1700px;height:1150px;background:#f5f1e8;
+    font-family:'DejaVu Sans','Liberation Sans',sans-serif;color:#20201c;position:relative;}
+  .title{position:absolute;top:34px;left:48px;font-size:30px;font-weight:700;letter-spacing:.2px;}
+  .sub{position:absolute;top:76px;left:48px;font-size:17px;color:#6b6558;}
+  .stamp{position:absolute;top:44px;right:48px;text-align:right;font-size:15px;color:#6b6558;line-height:1.4;}
+  .panel{position:absolute;top:150px;bottom:52px;background:#eeeadf;border:1px solid #cfc8b6;border-radius:6px;}
+  .pa{left:48px;width:930px;}
+  .pb{left:1004px;width:648px;}
+  .plabel{position:absolute;top:164px;font-size:16px;font-weight:700;letter-spacing:.4px;color:#3a3a32;}
+  svg{position:absolute;top:150px;}
+  .note{position:absolute;bottom:22px;left:48px;font-size:14px;color:#6b6558;}
+</style></head>
+<body>
+<div class="sheet">
+  <div class="title">Лента-картридж в вентиляции 9-этажки — схема крепления</div>
+  <div class="sub">Пассивный съёмный узел. Без питания. Принципиальная схема, не рабочий чертёж.</div>
+  <div class="stamp">Н. Мальц ⚙ Э.<br>лист 1 из 1<br>19.10.2026</div>
+  <div class="plabel" style="left:70px;">А · Места установки</div>
+  <div class="plabel" style="left:1026px;">Б · Узел крепления (выноска)</div>
+  <div class="panel pa"></div>
+  <div class="panel pb"></div>
+
+  <!-- PANEL A : building section -->
+  <svg x="48" y="150" width="930" height="948" viewBox="0 0 930 948">
+    <defs>
+      <marker id="ar" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+        <path d="M0,0 L7,3 L0,6 z" fill="#3a3a32"/>
+      </marker>
+    </defs>
+    <!-- building outline -->
+    <rect x="70" y="90" width="360" height="720" fill="#ffffff" stroke="#20201c" stroke-width="2.5"/>
+    <!-- floors -->
+    <g stroke="#20201c" stroke-width="1.3">
+      <line x1="70" y1="170" x2="430" y2="170"/>
+      <line x1="70" y1="250" x2="430" y2="250"/>
+      <line x1="70" y1="330" x2="430" y2="330"/>
+      <line x1="70" y1="410" x2="430" y2="410"/>
+      <line x1="70" y1="490" x2="430" y2="490"/>
+      <line x1="70" y1="570" x2="430" y2="570"/>
+      <line x1="70" y1="650" x2="430" y2="650"/>
+      <line x1="70" y1="730" x2="430" y2="730"/>
+    </g>
+    <!-- ground -->
+    <line x1="40" y1="810" x2="460" y2="810" stroke="#20201c" stroke-width="3"/>
+    <g stroke="#20201c" stroke-width="1">
+      <line x1="60" y1="810" x2="48" y2="832"/><line x1="100" y1="810" x2="88" y2="832"/>
+      <line x1="140" y1="810" x2="128" y2="832"/><line x1="180" y1="810" x2="168" y2="832"/>
+      <line x1="300" y1="810" x2="288" y2="832"/><line x1="340" y1="810" x2="328" y2="832"/>
+      <line x1="380" y1="810" x2="368" y2="832"/><line x1="420" y1="810" x2="408" y2="832"/>
+    </g>
+    <!-- roof + deflector -->
+    <line x1="70" y1="90" x2="430" y2="90" stroke="#20201c" stroke-width="3"/>
+    <rect x="330" y="34" width="44" height="56" fill="#ffffff" stroke="#20201c" stroke-width="2"/>
+    <path d="M341,34 l11,-22 l11,22 z" fill="#ffffff" stroke="#20201c" stroke-width="2"/>
+    <text x="388" y="60" font-size="15" fill="#3a3a32">дефлектор</text>
+
+    <!-- collection shaft (vertical) -->
+    <rect x="300" y="90" width="34" height="720" fill="#e7ece4" stroke="#20201c" stroke-width="2"/>
+    <text x="240" y="112" font-size="15" fill="#3a3a32">сборный канал</text>
+
+    <!-- satellite ducts joining shaft + rooms -->
+    <g stroke="#20201c" stroke-width="1.6" fill="none">
+      <path d="M300,210 h-90 v-30 h-120" />
+      <path d="M300,370 h-90 v-30 h-120" />
+      <path d="M300,530 h-90 v-30 h-120" />
+      <path d="M300,690 h-90 v-30 h-120" />
+    </g>
+    <text x="120" y="188" font-size="14" fill="#3a3a32">спутниковый канал</text>
+
+    <!-- cartridge nodes on shaft (3) -->
+    <g>
+      <circle cx="317" cy="370" r="15" fill="#c05621" stroke="#20201c" stroke-width="2"/>
+      <text x="310" y="376" font-size="16" font-weight="700" fill="#fff">1</text>
+      <circle cx="317" cy="530" r="15" fill="#c05621" stroke="#20201c" stroke-width="2"/>
+      <text x="310" y="536" font-size="16" font-weight="700" fill="#fff">2</text>
+      <circle cx="317" cy="690" r="15" fill="#c05621" stroke="#20201c" stroke-width="2"/>
+      <text x="310" y="696" font-size="16" font-weight="700" fill="#fff">3</text>
+    </g>
+    <!-- option node in satellite duct -->
+    <circle cx="175" cy="340" r="14" fill="none" stroke="#c05621" stroke-width="2.5"/>
+    <text x="169" y="346" font-size="15" font-weight="700" fill="#c05621">0</text>
+
+    <!-- detail callout -->
+    <line x1="332" y1="530" x2="560" y2="470" stroke="#3a3a32" stroke-width="1.4" stroke-dasharray="6 5"/>
+    <rect x="558" y="452" width="120" height="36" fill="#eeeadf" stroke="#20201c" stroke-width="1.5"/>
+    <text x="572" y="476" font-size="17" font-weight="700">деталь Б</text>
+
+    <!-- legend -->
+    <g font-size="16" fill="#20201c">
+      <rect x="70" y="856" width="24" height="24" fill="#c05621" stroke="#20201c" stroke-width="1.5"/>
+      <text x="106" y="875">1–3 · лента-картридж в сборном канале (этажи 7, 5, 3)</text>
+      <rect x="70" y="892" width="24" height="24" fill="none" stroke="#c05621" stroke-width="2.5"/>
+      <text x="106" y="911">0 · тот же узел в спутниковом канале (вариант, ближе к решётке)</text>
+    </g>
+    <text x="70" y="944" font-size="14" fill="#6b6558">Ко всем узлам — доступ через ревизионный люк; замена вручную, без инструмента.</text>
+  </svg>
+
+  <!-- PANEL B : mounting detail -->
+  <svg x="1004" y="150" width="648" height="948" viewBox="0 0 648 948">
+    <!-- duct section (vertical shaft) -->
+    <rect x="120" y="90" width="300" height="560" fill="#e7ece4" stroke="#20201c" stroke-width="2.5"/>
+    <text x="132" y="80" font-size="15" fill="#3a3a32">канал (вид в разрезе)</text>
+
+    <!-- access hatch -->
+    <rect x="120" y="300" width="14" height="150" fill="#ffffff" stroke="#20201c" stroke-width="2"/>
+    <text x="20" y="384" font-size="15" fill="#3a3a32">люк</text>
+    <line x1="100" y1="375" x2="120" y2="375" stroke="#3a3a32" stroke-width="1.2"/>
+    <path d="M112,368 l10,7 l-10,7" fill="none" stroke="#3a3a32" stroke-width="1.4"/>
+
+    <!-- guide rails -->
+    <rect x="150" y="150" width="12" height="420" fill="#b9c0ae" stroke="#20201c" stroke-width="1.5"/>
+    <rect x="378" y="150" width="12" height="420" fill="#b9c0ae" stroke="#20201c" stroke-width="1.5"/>
+    <text x="60" y="150" font-size="14" fill="#3a3a32">направляющая</text>
+
+    <!-- cartridge frame with oval sections + cilia -->
+    <g transform="translate(162,220)">
+      <rect x="0" y="0" width="216" height="270" rx="6" fill="#ffffff" stroke="#20201c" stroke-width="2"/>
+      <g fill="none" stroke="#20201c" stroke-width="1.6">
+        <ellipse cx="108" cy="45" rx="62" ry="26"/>
+        <ellipse cx="108" cy="108" rx="62" ry="26"/>
+        <ellipse cx="108" cy="171" rx="62" ry="26"/>
+        <ellipse cx="108" cy="234" rx="62" ry="26"/>
+      </g>
+      <!-- cilia hints -->
+      <g stroke="#c05621" stroke-width="1.4">
+        <line x1="54" y1="45" x2="44" y2="35"/><line x1="162" y1="45" x2="172" y2="35"/>
+        <line x1="54" y1="108" x2="44" y2="98"/><line x1="162" y1="108" x2="172" y2="98"/>
+        <line x1="54" y1="171" x2="44" y2="161"/><line x1="162" y1="171" x2="172" y2="161"/>
+        <line x1="54" y1="234" x2="44" y2="224"/><line x1="162" y1="234" x2="172" y2="224"/>
+      </g>
+    </g>
+    <text x="470" y="250" font-size="14" fill="#3a3a32">секции,</text>
+    <text x="470" y="268" font-size="14" fill="#3a3a32">9+2 овал</text>
+
+    <!-- gasket -->
+    <g stroke="#20201c" stroke-width="1.4" fill="none">
+      <rect x="156" y="214" width="228" height="8" fill="#d9c7a3"/>
+      <rect x="156" y="488" width="228" height="8" fill="#d9c7a3"/>
+    </g>
+    <text x="470" y="500" font-size="14" fill="#3a3a32">уплотнитель</text>
+    <text x="470" y="518" font-size="14" fill="#3a3a32">(EPDM)</text>
+
+    <!-- spring clip lock -->
+    <path d="M162,222 q-24,0 -24,18" fill="none" stroke="#c05621" stroke-width="2.2"/>
+    <path d="M378,222 q24,0 24,18" fill="none" stroke="#c05621" stroke-width="2.2"/>
+    <text x="470" y="196" font-size="14" fill="#3a3a32">фиксатор-</text>
+    <text x="470" y="214" font-size="14" fill="#3a3a32">защёлка</text>
+
+    <!-- pull tab -->
+    <rect x="240" y="496" width="60" height="12" rx="6" fill="#c05621"/>
+    <text x="470" y="560" font-size="14" fill="#3a3a32">ручка, потянуть</text>
+    <text x="470" y="578" font-size="14" fill="#3a3a32">на себя</text>
+
+    <!-- airflow arrows -->
+    <g stroke="#3a3a32" stroke-width="1.8" marker-end="url(#ar)">
+      <line x1="270" y1="126" x2="270" y2="176"/>
+      <line x1="270" y1="540" x2="270" y2="600"/>
+    </g>
+    <text x="470" y="130" font-size="14" fill="#3a3a32">поток</text>
+
+    <!-- sequence notes -->
+    <g font-size="16" fill="#20201c">
+      <text x="120" y="700">1 · снять решётку, открыть люк,</text>
+      <text x="120" y="726">вынуть картридж за ручку по направляющим;</text>
+      <text x="120" y="752">2 · промыть овал; грязь скатывается,</text>
+      <text x="120" y="778">углов нет, не задерживается;</text>
+      <text x="120" y="804">3 · вставить до защёлки, уплотнитель</text>
+      <text x="120" y="830">закрывает байпас, поток не рвётся;</text>
+      <text x="120" y="856">4 · в вертикальном канале — самосброс</text>
+      <text x="120" y="882">по овалу вниз, к карману у люка.</text>
+    </g>
+    <text x="120" y="924" font-size="14" fill="#6b6558">Без питания, без электроники: картридж только ловит.</text>
+  </svg>
+
+  <div class="note">Рисовал я; форму ленты и овал придумала Э. · без питания = без вранья · не сужать канал, картридж рыхлый и съёмный</div>
+</div>
+</body></html>
